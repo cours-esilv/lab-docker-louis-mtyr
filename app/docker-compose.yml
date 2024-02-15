@@ -1,0 +1,15 @@
+version: '3'
+services:
+  my-back-service:
+    image: mlops-python-image
+    ports:
+      - 5000:5000
+    environment:
+      - WS_BACK_URL=http://127.0.0.1:5000
+
+  my-front-service:
+    image: mlops-front-image
+    ports:
+      - 8080:8080
+    environment:
+      - WS_BACK_URL=http://127.0.0.1:8080
