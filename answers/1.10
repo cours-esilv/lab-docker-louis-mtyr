@@ -1,1 +1,1 @@
-docker run -it --name mlops-python-container -p 5000:5000 -e CURRENT_ENVIRONMENT=production mlops-python-image
+docker exec -it mlops-python-container
